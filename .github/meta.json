@@ -1,8 +1,8 @@
 [
     {
-        "ident" : "pd2_sample_autoupdate",
+        "ident" : "random_rocky_test",
         "hash" : "%HASH%",
-        "patchnotes_url" : "https://example.com/other-patchnotes.html",
-        "download_url" : "https://github.com/HugoZink/PD2AutoUpdateExample/releases/download/refs%2Fheads%2Fmaster/pd2autoupdatexample.zip"
+        "patchnotes_url" : "https://github.com/rockymoto517/test-autoupdates/commits/main",
+        "download_url" : "https://github.com/rockymoto517/test-autoupdates/releases/download/refs%2Fheads%2Fmaster/pd2autoupdatexample.zip"
     }
 ]

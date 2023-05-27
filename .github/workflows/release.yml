@@ -1,21 +1,21 @@
 name: Create PAYDAY mod release
 on:
   push:
-    branches: [ master ]
+    branches: [ main ]
   pull_request:
-    branches: [ master ]
+    branches: [ main ]
 jobs:
   build:
     runs-on: windows-latest
     steps:
-    - uses: actions/checkout@master
+    - uses: actions/checkout@main
     - name: Delete Existing Release
       uses: ame-yu/action-delete-latest-release@v2
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
     - name: Archive Mod
       run: |
-         .\.github\7za.exe -tzip a ".\pd2autoupdatexample.zip" ".\SampleMod"
+         .\.github\7za.exe -tzip a ".\AddSnipers.zip" ".\AddSnipers"
       shell: powershell
     - name: Create New Release
       id: create_release
@@ -36,8 +36,8 @@ jobs:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
         upload_url: ${{ steps.create_release.outputs.upload_url }} # This pulls from the CREATE RELEASE step above, referencing it's ID to get its outputs object, which include a `upload_url`. See this blog post for more info: https://jasonet.co/posts/new-features-of-github-actions/#passing-data-to-future-steps 
-        asset_path: ./pd2autoupdatexample.zip
-        asset_name: pd2autoupdatexample.zip
+        asset_path: ./AddSnipers.zip
+        asset_name: AddSnipers.zip
         asset_content_type: application/zip
     - name: Hash mod and create mod meta file
       id: create_meta_file
