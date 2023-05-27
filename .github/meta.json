@@ -3,6 +3,6 @@
         "ident" : "random_rocky_test",
         "hash" : "%HASH%",
         "patchnotes_url" : "https://github.com/rockymoto517/test-autoupdates/commits/main",
-        "download_url" : "https://github.com/rockymoto517/test-autoupdates/releases/download/refs%2Fheads%2Fmain/AddSniper.zip"
+        "download_url" : "https://github.com/rockymoto517/test-autoupdates/releases/download/Release/AddSnipers.zip"
     }
 ]
