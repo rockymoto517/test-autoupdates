@@ -1,6 +1,6 @@
 {
     "name" : "Enable Spawns",
-    "author" : "Rockymoto",
+    "author" : "Rockymoto517",
     "hooks" : [
         { "hook_id" : "core/lib/managers/mission/coremissionmanager", "script_path" : "coremissionmanager.lua" }
     ],
