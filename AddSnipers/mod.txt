@@ -8,7 +8,7 @@
 		{
 			"identifier" : "random_rocky_test",
 			"host" : {
-				"meta" : "https://github.com/rockymoto517/test-autoupdates/releases/download/refs%2Fheads%2Fmain/meta.json"
+				"meta" : "https://github.com/rockymoto517/test-autoupdates/releases/download/Release/meta.json"
 			}
 		}
 	]
